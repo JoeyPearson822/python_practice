@@ -21,8 +21,8 @@ while not out_of_guesses:
     player_guess = int(input())
 
     if player_guess == 0:
-        out_of_guesses = True
         print("Quitter!")
+        break
 
     if player_guess == secret_number and attempt_number > 1:
         print(f"Congratulations! {secret_number} was the correct number!\
@@ -42,6 +42,6 @@ while not out_of_guesses:
         print("Guess a lower number!")
         attempt_number += 1
         
-    elif player_guess < secret_number and not player_guess == 0:
+    elif player_guess < secret_number:
         print("Guess a higher number!")
         attempt_number += 1
