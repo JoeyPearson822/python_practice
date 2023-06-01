@@ -9,7 +9,7 @@ MAX_NUM = 50
 ALLOWED_GUESSES = 5
 
 print(f"Guess a number between {MIN_NUM} and {MAX_NUM}. \
-You have {ALLOWED_GUESSES} guesses. Good luck!\n\n")
+      You have {ALLOWED_GUESSES} guesses. Good luck!\n\n")
 
 out_of_guesses = False
 attempt_number = 1
@@ -26,7 +26,8 @@ while not out_of_guesses:
 
     if player_guess == secret_number and attempt_number > 1:
         print(f"Congratulations! {secret_number} was the correct number!\
-        \nIt took you {attempt_number} tries to guess correctly.")
+              \nIt took you {attempt_number} tries to guess correctly.")
+              
         out_of_guesses = True
 
     elif player_guess == secret_number and attempt_number == 1:
